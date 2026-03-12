@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТОП-50 книг в жанре Ужасы</title>
+    <style>
+        body {
+            /* Создаем эффект глубокого свечения в центре */
+            background: radial-gradient(circle at center, #0a1a0a 0%, #000000 100%);
+            background-attachment: fixed;
+            color: #d1ffd1;
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Добавляем эффект виньетки поверх всего */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.8) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2; /* Чтобы текст был над виньеткой */
+        }
+
+        h1 {
+            color: #00ff41;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 4px solid #00ff41;
+            padding-bottom: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 15px rgba(0, 255, 65, 0.7);
+            font-size: 2.2em; /* Крупный заголовок */
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #66bb66;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .book-item {
+            background: rgba(10, 30, 10, 0.6);
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid #00ff41;
+            border-right: 1px solid rgba(0, 255, 65, 0.1);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px); /* Легкое размытие фона под карточкой */
+        }
+
+        .book-item:hover {
+            transform: scale(1.02);
+            background: rgba(20, 50, 20, 0.8);
+            box-shadow: 0 0 25px rgba(0, 255, 65, 0.15);
+        }
+
+        .book-title {
+            color: #ffffff;
+            font-weight: 900;
+            display: block;
+            font-size: 1.4em; /* Еще крупнее названия */
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .book-desc {
+            font-size: 1.05em;
+            color: #b3dfb3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px 20px;
+            font-size: 0.9em;
+            color: #446644;
+            border-top: 1px solid #1a331a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>ТОП-50 книг в жанре Ужасы</h1>
+    <p class="subtitle">Полный список для тех, кто не боится темноты. Выбор обладателя зеленой закладки.</p>
+
+    <div class="book-item"><span class="book-title">1. Стивен Кинг — «Сияние»</span><span class="book-desc">История о медленном погружении в безумие в стенах заснеженного отеля «Оверлук».</span></div>
+    <div class="book-item"><span class="book-title">2. Говард Лавкрафт — «Зов Ктулху»</span><span class="book-desc">Древние боги и космический масштаб ужаса перед лицом неведомого.</span></div>
+    <div class="book-item"><span class="book-title">3. Ширли Джексон — «Призраки дома на холме»</span><span class="book-desc">Классическая готика о доме, который ломает психику своих гостей.</span></div>
+    <div class="book-item"><span class="book-title">4. Брэм Стокер — «Дракула»</span><span class="book-desc">Бессмертный роман о самом известном вампире в истории литературы.</span></div>
+    <div class="book-item"><span class="book-title">5. Клайв Баркер — «Восставший из ада»</span><span class="book-desc">Мрачная история о шкатулке-головоломке, открывающей врата в мир боли.</span></div>
+    <div class="book-item"><span class="book-title">6. Уильям Блэтти — «Изгоняющий дьявола»</span><span class="book-desc">Пугающе реалистичное описание одержимости и обряда экзорцизма.</span></div>
+    <div class="book-item"><span class="book-title">7. Дэн Симмонс — «Террор»</span><span class="book-desc">Экспедиция во льдах Арктики, преследуемая мистическим чудовищем.</span></div>
+    <div class="book-item"><span class="book-title">8. Ричард Мэтисон — «Я — легенда»</span><span class="book-desc">Одинокая борьба последнего человека против мира вампиров.</span></div>
+    <div class="book-item"><span class="book-title">9. Роберт Блох — «Психо»</span><span class="book-desc">Культовый триллер о скелетах в шкафу Нормана Бейтса.</span></div>
+    <div class="book-item"><span class="book-title">10. Мэри Шелли — «Франкенштейн»</span><span class="book-desc">Трагедия создателя и его монстра, порожденная научным азартом.</span></div>
+
+    <div class="book-item"><span class="book-title">11. Томас Харрис — «Молчание ягнят»</span><span class="book-desc">Интеллектуальный поединок агента ФБР и гениального Ганнибала Лектера.</span></div>
+    <div class="book-item"><span class="book-title">12. Джо Хилл — «Коробка в форме сердца»</span><span class="book-desc">Стареющий рокер покупает на аукционе настоящий призрак.</span></div>
+    <div class="book-item"><span class="book-title">13. Сьюзен Хилл — «Женщина в черном»</span><span class="book-desc">Классическая британская история о привидении на туманных болотах.</span></div>
+    <div class="book-item"><span class="book-title">14. Эдгар Аллан По — «Падение дома Ашеров»</span><span class="book-desc">Атмосферный шедевр о безумии и семейном проклятии.</span></div>
+    <div class="book-item"><span class="book-title">15. Адам Нэвилл — «Ритуал»</span><span class="book-desc">Четверо друзей натыкаются на следы древнего культа в лесах Швеции.</span></div>
+    <div class="book-item"><span class="book-title">16. Стивен Кинг — «Оно»</span><span class="book-desc">Зло в образе клоуна терроризирует городок Дерри каждые 27 лет.</span></div>
+    <div class="book-item"><span class="book-title">17. Кодзи Судзуки — «Звонок»</span><span class="book-desc">Проклятая видеокассета, приносящая смерть каждому, кто её посмотрел.</span></div>
+    <div class="book-item"><span class="book-title">18. Грэм Мастертон — «Маниту»</span><span class="book-desc">Индейский шаман пытается возродиться в современном теле.</span></div>
+    <div class="book-item"><span class="book-title">19. Питер Страуб — «История с привидениями»</span><span class="book-desc">Ошибки прошлого возвращаются, чтобы убить компанию старых друзей.</span></div>
+    <div class="book-item"><span class="book-title">20. Айра Левин — «Ребенок Розмари»</span><span class="book-desc">Молодая женщина подозревает соседей в сатанинском заговоре.</span></div>
+
+    <div class="book-item"><span class="book-title">21. Стивен Кинг — «Кладбище домашних животных»</span><span class="book-desc">Иногда мертвым лучше оставаться мертвыми. Глубоко личная драма о горе.</span></div>
+    <div class="book-item"><span class="book-title">22. Гэстон Леру — «Призрак Оперы»</span><span class="book-desc">Трагическая и пугающая история о гении, скрывающемся в подвалах театра.</span></div>
+    <div class="book-item"><span class="book-title">23. Артур Мэкен — «Великий бог Пан»</span><span class="book-desc">Забытый ужас древности вторгается в современную викторианскую жизнь.</span></div>
+    <div class="book-item"><span class="book-title">24. Оскар Уайльд — «Портрет Дориана Грея»</span><span class="book-desc">Мистическая история о стареющем полотне и вечно молодом грешнике.</span></div>
+    <div class="book-item"><span class="book-title">25. Генри Джеймс — «Поворот винта»</span><span class="book-desc">История гувернантки, которая борется за души детей с призраками.</span></div>
+    <div class="book-item"><span class="book-title">26. Нил Гейман — «Коралина»</span><span class="book-desc">Жуткая сказка о другой маме с пуговицами вместо глаз.</span></div>
+    <div class="book-item"><span class="book-title">27. Джек Финней — «Вторжение похитителей тел»</span><span class="book-desc">Ваши близкие больше не они — их заменили бездушные копии из космоса.</span></div>
+    <div class="book-item"><span class="book-title">28. Кристофер Голден — «Арарат»</span><span class="book-desc">В недрах горы находят ковчег, а в нем — то, что лучше было не тревожить.</span></div>
+    <div class="book-item"><span class="book-title">29. Рэй Брэдбери — «Надвигается беда»</span><span class="book-desc">Карнавал, привозящий в город тьму и исполняющий опасные желания.</span></div>
+    <div class="book-item"><span class="book-title">30. Томас Лиготти — «Песни мертвого сновидца»</span><span class="book-desc">Сборник философских и сюрреалистичных кошмаров.</span></div>
+
+    <div class="book-item"><span class="book-title">31. Ю Несбё — «Снеговик»</span><span class="book-desc">Холодный триллер о серийном убийце, оставляющем зловещий знак.</span></div>
+    <div class="book-item"><span class="book-title">32. Клайв Баркер — «Книги крови»</span><span class="book-desc">Антология, изменившая лицо современного хоррора своей смелостью.</span></div>
+    <div class="book-item"><span class="book-title">33. Джон Уиндем — «Кукушки Мидвича»</span><span class="book-desc">В тихой деревне рождаются дети с золотыми глазами и пугающими способностями.</span></div>
+    <div class="book-item"><span class="book-title">34. Мэтью Льюис — «Монах»</span><span class="book-desc">Скандальный готический роман о падении святого человека в бездну греха.</span></div>
+    <div class="book-item"><span class="book-title">35. Лафкадио Хирн — «Кайдан»</span><span class="book-desc">Традиционные японские сказки о привидениях и лесных духах.</span></div>
+    <div class="book-item"><span class="book-title">36. Стивен Кинг — «Жребий Салема»</span><span class="book-desc">Маленький американский городок медленно и незаметно захватывают вампиры.</span></div>
+    <div class="book-item"><span class="book-title">37. Макс Брукс — «Мировая война Z»</span><span class="book-desc">Масштабная панорама зомби-апокалипсиса через интервью выживших.</span></div>
+    <div class="book-item"><span class="book-title">38. Патрик Зюскинд — «Парфюмер»</span><span class="book-desc">Ужасающая история гения запахов, убивающего ради идеального аромата.</span></div>
+    <div class="book-item"><span class="book-title">39. Виктор Лаваль — «Подменыш»</span><span class="book-desc">Современная сказка в Нью-Йорке, оборачивающаяся жутким кошмаром.</span></div>
+    <div class="book-item"><span class="book-title">40. Дафна Дюморье — «Птицы»</span><span class="book-desc">Природа восстает против людей в виде внезапно обезумевших стай птиц.</span></div>
+
+    <div class="book-item"><span class="book-title">41. Джастин Кронин — «Перерождение»</span><span class="book-desc">Масштабный постапокалипсис о вирусе, превратившем людей в нечто иное.</span></div>
+    <div class="book-item"><span class="book-title">42. Пол Трембле — «Призраки в голове»</span><span class="book-desc">Реалити-шоу об экзорцизме или трагедия психически больной девушки?</span></div>
+    <div class="book-item"><span class="book-title">43. Рэмси Кэмпбелл — «Лицо, которое нужно заставить ждать»</span><span class="book-desc">Мастер психологического дискомфорта и нарастающей тревоги.</span></div>
+    <div class="book-item"><span class="book-title">44. Кристиан Роберт Винд — «Не спи»</span><span class="book-desc">Триллер о том, как опасно погружаться в чужие тайны и свои кошмары.</span></div>
+    <div class="book-item"><span class="book-title">45. Элджернон Блэквуд — «Ивы»</span><span class="book-desc">Путешествие на лодке превращается в столкновение с иным измерением.</span></div>
+    <div class="book-item"><span class="book-title">46. Кэт Клинч — «Дом солью выложен»</span><span class="book-desc">Готическая история о семейных проклятиях в поместье на берегу моря.</span></div>
+    <div class="book-item"><span class="book-title">47. Стивен Кинг — «Мизери»</span><span class="book-desc">Кошмар писателя, попавшего в плен к своей «поклоннице номер один».</span></div>
+    <div class="book-item"><span class="book-title">48. Джош Малерман — «Птичий короб»</span><span class="book-desc">Мир, в котором один взгляд на улицу может лишить тебя рассудка.</span></div>
+    <div class="book-item"><span class="book-title">49. Юн Айвиде Линдквист — «Впусти меня»</span><span class="book-desc">Пронизывающая история дружбы мальчика-изгоя и девочки-вампира.</span></div>
+    <div class="book-item"><span class="book-title">50. М. Р. Джеймс — «Рассказы антиквара о привидениях»</span><span class="book-desc">Умные и по-настоящему пугающие классические истории о призраках.</span></div>
+
+    <div class="footer">
+        &copy; 2026 Твоя Закладка. Не оборачивайся, когда читаешь.
+    </div>
+</div>
+
+</body>
+</html>
